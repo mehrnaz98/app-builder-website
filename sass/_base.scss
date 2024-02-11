@@ -1,0 +1,78 @@
+// COLOR VARIABLES
+
+$color-primary-dark: #254441;
+
+$color-red-light: #ff6f59;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-primary: #1f306e;
+$color-primary-light: #ebebeb;
+$color-secondary: #f5487f;
+$color-red: #c7417b;
+$color-red-dark: #8f3b76;
+$color-purple-light: #69529f;
+$color-pink-dark: #8f3b76;
+$color-purple-dark: #463864;
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  /*display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  min-height: 100vh;*/
+  font-family: $font-primary;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
+  grid-template-columns:
+    [full-start-start] minmax(6rem, 1fr)
+    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        7,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content repeat(
+        4,
+        min-content
+      );
+  }
+}

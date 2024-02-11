@@ -1,0 +1,72 @@
+/* Header Section */
+header {
+  /* Add styling for header */
+}
+
+.header-content {
+  display: flex;
+  /* Add styling for header content */
+}
+
+.header-left {
+  flex: 1;
+  /* Add styling for left part */
+}
+
+.header-right {
+  flex: 1;
+  /* Add styling for right part */
+  ul {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header {
+  /* grid-column: full-start / col-end 3;
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content);
+  align-content: center;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1 / -1;
+  }*/
+
+  &__title {
+    text-align: left;
+    color: $color-primary-dark;
+    list-style: none;
+
+    &--main {
+      font-size: 4rem;
+      line-height: 30px;
+      font-weight: 500;
+      text-transform: lowercase;
+      padding: 0;
+      margin: 0;
+
+      @media screen and (max-width: $bp-small) {
+        font-size: 9rem;
+      }
+    }
+
+    &--sub {
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+      padding-top: 2.5rem;
+      margin-right: -32rem;
+    }
+
+    &__picture {
+      display: flex;
+      list-style: none;
+      text-align: left;
+      &--pic1 {
+      }
+      &--pic2 {
+      }
+    }
+  }
+}
