@@ -18,6 +18,16 @@ nav {
       color: var(--color-primary);
       text-decoration: none;
     }
+
+    .logbutton {
+      color: $color-white;
+      background-color: $color-red;
+      font-size: 2.5rem;
+      padding: 8px 43px;
+      border-radius: 82px;
+      margin-left: 26rem;
+    }
+
     :not(:last-child) {
       margin-right: 6rem;
     }

@@ -357,6 +357,13 @@ nav {
     nav .navlink li a {
       color: var(--color-primary);
       text-decoration: none; }
+    nav .navlink .logbutton {
+      color: #ffffff;
+      background-color: #c7417b;
+      font-size: 2.5rem;
+      padding: 8px 43px;
+      border-radius: 82px;
+      margin-left: 26rem; }
     nav .navlink :not(:last-child) {
       margin-right: 6rem; }
   nav :hover {
