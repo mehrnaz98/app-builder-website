@@ -1,24 +1,81 @@
 /* Header Section */
-header {
-  /* Add styling for header */
-}
 
 .header-content {
   display: flex;
-  /* Add styling for header content */
+  color: $color-primary;
 }
 
-.header-left {
+.header__left {
   flex: 1;
-  /* Add styling for left part */
+  text-align: left;
+  list-style: none;
+  margin-top: 3rem;
+
+  &--main {
+    font-family: $font-primary;
+    font-size: 4.6rem;
+    line-height: 60px;
+    font-weight: 501;
+    text-transform: capitalize;
+    margin-left: 12rem;
+    margin-top: 9rem;
+    margin-right: -17rem;
+
+    @media screen and (max-width: $bp-small) {
+      font-size: 9rem;
+    }
+  }
+
+  &--sub {
+    font-family: $font-display;
+    font-size: 1.8rem;
+    padding-top: 2.5rem;
+    margin-left: 12rem;
+    margin-right: 5rem;
+    line-height: 2.9rem;
+  }
+
+  .downloadbutton {
+    font-family: $font-primary;
+    margin-top: 8rem;
+    a {
+      text-decoration: none;
+      color: $color-white;
+      background-color: $color-primary;
+      font-size: 1.8rem;
+      padding: 21px 21px;
+      border-radius: 12px;
+      margin-left: 26rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      margin-left: 12rem;
+
+      i {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
+    }
+  }
 }
 
-.header-right {
+.header__right {
   flex: 1;
-  /* Add styling for right part */
+  margin-right: -7rem;
+  margin-top: -3rem;
+
   ul {
     display: flex;
     align-items: center;
+    list-style: none;
+  }
+
+  &--pic1 {
+    width: 30rem;
+    margin-right: -13rem;
+  }
+
+  &--pic2 {
+    width: 40rem;
   }
 }
 
@@ -32,41 +89,4 @@ header {
   @media only screen and (max-width: $bp-medium) {
     grid-column: 1 / -1;
   }*/
-
-  &__title {
-    text-align: left;
-    color: $color-primary-dark;
-    list-style: none;
-
-    &--main {
-      font-size: 4rem;
-      line-height: 30px;
-      font-weight: 500;
-      text-transform: lowercase;
-      padding: 0;
-      margin: 0;
-
-      @media screen and (max-width: $bp-small) {
-        font-size: 9rem;
-      }
-    }
-
-    &--sub {
-      font-size: 1.5rem;
-      padding: 0;
-      margin: 0;
-      padding-top: 2.5rem;
-      margin-right: -32rem;
-    }
-
-    &__picture {
-      display: flex;
-      list-style: none;
-      text-align: left;
-      &--pic1 {
-      }
-      &--pic2 {
-      }
-    }
-  }
 }
