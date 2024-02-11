@@ -1,14 +1,13 @@
-.serviceshaeding {
+.servicesheading {
 }
 
 .services {
   font-family: $font-primary;
   text-align: left;
-  background-color: $color-white;
-  border-radius: 1.3rem;
+  background-color: $color-primary-light;
+  border-radius: 1.5rem;
   box-shadow: 0.1rem 0.4rem 1.2rem rgba($color-black, 0.6);
-  padding: 3rem 1rem;
-  padding-bottom: 1.5rem;
+  padding: 3.5rem 1rem 1.7rem 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
 
@@ -16,25 +15,26 @@
     &--pic {
       display: block;
       margin: 0 auto;
-      width: 150px;
+      width: 200px;
     }
   }
 
   &__text {
     &--title {
       text-align: center;
-      font-size: 2.2rem;
+      font-size: 2.8rem;
       font-weight: 600;
+      margin: 0rem;
     }
 
     &--paragraph {
       text-align: left;
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       font-weight: 500;
       color: $color-grey-dark-2;
-      line-height: 2.2rem;
-      margin-top: -1rem;
-      padding: 0 0.4rem;
+      line-height: 2.7rem;
+      margin-top: 0.8rem;
+      padding: 0 1.5rem;
     }
   }
 }
