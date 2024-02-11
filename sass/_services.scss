@@ -1,0 +1,40 @@
+.serviceshaeding {
+}
+
+.services {
+  font-family: $font-primary;
+  text-align: left;
+  background-color: $color-white;
+  border-radius: 1.3rem;
+  box-shadow: 0.1rem 0.4rem 1.2rem rgba($color-black, 0.6);
+  padding: 3rem 1rem;
+  padding-bottom: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  &__image {
+    &--pic {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+    }
+  }
+
+  &__text {
+    &--title {
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    &--paragraph {
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $color-grey-dark-2;
+      line-height: 2.2rem;
+      margin-top: -1rem;
+      padding: 0 0.4rem;
+    }
+  }
+}
