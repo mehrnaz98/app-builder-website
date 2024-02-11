@@ -1,6 +1,6 @@
 .gallery {
-  grid-column: full-start / full-end;
-
+  // grid-column: full-start / full-end;
+  grid-row: 6 / span 2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);

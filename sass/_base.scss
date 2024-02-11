@@ -93,20 +93,28 @@ html {
 }
 
 body {
-  /*display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer";
-  min-height: 100vh;*/
-  // font-family: $font-display;
   font-weight: 300;
   line-height: 1.6;
 }
 
 .container {
   display: grid;
+  grid-template-areas:
+    "header header header"
+    "servicesSection servicesSection servicesSection"
+    "journal journal journal"
+    "gallery gallery gallery"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.servicesSection {
+  grid-area: servicesSection;
+}
+/*display: grid;
   grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
   grid-template-columns:
     [full-start] minmax(6rem, 1fr)
@@ -127,5 +135,4 @@ body {
         4,
         min-content
       );
-  }
-}
+  }*/

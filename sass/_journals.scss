@@ -2,15 +2,15 @@
   background-color: $color-primary;
   padding: 10rem 17rem;
   //grid-column: center-start / center-end;
-  grid-column: full-start / full-end;
 
   display: grid;
+  grid-area: journal;
   // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: auto auto;
 
   line-height: 19px;
-  margin-top: -3rem;
+  margin-top: 6rem;
 
   &__content {
     color: $color-white;

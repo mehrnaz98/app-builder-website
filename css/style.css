@@ -42,27 +42,41 @@ html {
       font-size: 50%; } }
 
 body {
-  /*display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "nav"
-    "main"
-    "footer";
-  min-height: 100vh;*/
   font-weight: 300;
   line-height: 1.6; }
 
 .container {
   display: grid;
-  grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 62.5em) {
-    .container {
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content repeat(4, min-content); } }
+  grid-template-areas: "header header header" "servicesSection servicesSection servicesSection" "journal journal journal" "gallery gallery gallery" "footer footer footer"; }
 
+.header {
+  grid-area: header; }
+
+.servicesSection {
+  grid-area: servicesSection; }
+
+/*display: grid;
+  grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] repeat(
+        7,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(6rem, 1fr) [full-end];
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content repeat(
+        4,
+        min-content
+      );
+  }*/
 .heading__primary {
   font-family: "Raleway", sans-serif;
   font-size: 4.5rem;
@@ -398,7 +412,7 @@ nav {
           transform: translateX(-50%); } }
 
 .gallery {
-  grid-column: full-start / full-end;
+  grid-row: 6 / span 2;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
@@ -458,12 +472,12 @@ nav {
 .journal {
   background-color: #1f306e;
   padding: 10rem 17rem;
-  grid-column: full-start / full-end;
   display: grid;
+  grid-area: journal;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-template-rows: auto auto;
   line-height: 19px;
-  margin-top: -3rem; }
+  margin-top: 6rem; }
   .journal__content {
     color: #ffffff;
     margin-left: 0rem; }
