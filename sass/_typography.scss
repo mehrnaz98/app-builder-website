@@ -1,28 +1,24 @@
-.heading-primary {
-  font-weight: 600;
-  text-align: center;
-  color: $color-white;
+.heading__primary {
+  font-family: $font-display;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  transition: all 100ms ease-in-out;
 
-  &--dark {
-    color: $color-primary-dark;
-  }
-  &--main {
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: capitalize;
-    word-spacing: 0.4rem;
-    letter-spacing: 0.2rem;
-    padding: 0;
-    margin: 0;
-  }
-  &--sub {
-    font-size: 1.8rem;
-    padding: 0;
-    margin: 0;
+  &:hover {
+    transform: rotate(-1deg) skew(15deg);
+    text-shadow: 5px 6px 4px rgba($color-black, 0.5);
   }
 }
 
 .heading-1 {
-  font-size: 2.2rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 400;
 }

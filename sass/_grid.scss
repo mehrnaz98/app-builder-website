@@ -4,7 +4,7 @@
   background-color: #777;
 
   &:not(:last-child) {
-    margin-bottom: $vertical-gutter;
+    margin-bottom: 47rem;
     @media screen and (max-width: $bp-medium) {
       margin-bottom: $vertical-gutter-small;
     }

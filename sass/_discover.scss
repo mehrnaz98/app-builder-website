@@ -2,7 +2,7 @@
   grid-column: center-start / center-end;
 
   &__card {
-    color: $color-primary-dark;
+    color: $color-primary;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;

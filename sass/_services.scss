@@ -1,21 +1,28 @@
-.servicesheading {
-}
-
 .services {
   font-family: $font-primary;
   text-align: left;
   background-color: $color-primary-light;
   border-radius: 1.5rem;
-  box-shadow: 0.1rem 0.4rem 1.2rem rgba($color-black, 0.6);
+  box-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.5);
   padding: 3.5rem 1rem 1.7rem 1rem;
   margin-right: 1rem;
   margin-left: 1rem;
 
   &__image {
-    &--pic {
+    &--1 {
       display: block;
       margin: 0 auto;
       width: 200px;
+    }
+    &--2 {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+    }
+    &--3 {
+      display: block;
+      margin: 0 auto;
+      width: 190px;
     }
   }
 
@@ -32,8 +39,9 @@
       font-size: 1.8rem;
       font-weight: 500;
       color: $color-grey-dark-2;
-      line-height: 2.7rem;
+      line-height: 2.4rem;
       margin-top: 0.8rem;
+      margin-bottom: 2.5rem;
       padding: 0 1.5rem;
     }
   }
