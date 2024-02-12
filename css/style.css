@@ -362,12 +362,6 @@ nav {
     .footer {
       padding: 3rem; } }
 
-.footerParagraph {
-  color: #ffffff;
-  margin-left: 6rem;
-  margin-top: 9rem;
-  font-size: 1.8rem; }
-
 .footerList {
   display: flex;
   list-style: none;
@@ -399,6 +393,21 @@ nav {
     .footerList {
       justify-content: center;
       text-align: center; } }
+
+.footerEnd {
+  display: block ruby; }
+  .footerEnd__Paragraph {
+    color: #ffffff;
+    margin-left: 6rem;
+    margin-top: 9rem;
+    font-size: 1.8rem;
+    margin-right: 64rem; }
+  .footerEnd__Icon {
+    display: flex;
+    list-style: none;
+    color: #ffffff; }
+    .footerEnd__Icon--1, .footerEnd__Icon--2, .footerEnd__Icon--3, .footerEnd__Icon--4 {
+      background-color: #f5487f; }
 
 .gallery {
   display: grid;

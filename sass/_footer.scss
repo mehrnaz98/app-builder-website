@@ -12,13 +12,6 @@
   }
 }
 
-.footerParagraph {
-  color: $color-white;
-  margin-left: 6rem;
-  margin-top: 9rem;
-  font-size: 1.8rem;
-}
-
 .footerList {
   display: flex;
   list-style: none;
@@ -59,5 +52,30 @@
   @media only screen and (max-width: $bp-medium) {
     justify-content: center;
     text-align: center;
+  }
+}
+
+.footerEnd {
+  display: block ruby;
+
+  &__Paragraph {
+    color: $color-white;
+    margin-left: 6rem;
+    margin-top: 9rem;
+    font-size: 1.8rem;
+    margin-right: 64rem;
+  }
+
+  &__Icon {
+    display: flex;
+    list-style: none;
+    color: $color-white;
+
+    &--1,
+    &--2,
+    &--3,
+    &--4 {
+      background-color: $color-secondary;
+    }
   }
 }
