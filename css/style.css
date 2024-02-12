@@ -357,17 +357,22 @@ nav {
   padding: 6rem;
   padding-top: 9rem;
   padding-bottom: 15rem;
-  margin-top: 11rem; }
+  font-family: "Raleway", sans-serif; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       padding: 3rem; } }
+
+.footerParagraph {
+  color: #ffffff;
+  margin-left: 6rem;
+  margin-top: 9rem;
+  font-size: 1.8rem; }
 
 .footerList {
   display: flex;
   list-style: none;
   align-items: center;
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
   margin: 0 auto;
   text-align: center;
@@ -378,8 +383,9 @@ nav {
     text-align: left;
     display: block;
     list-style: none;
-    margin-right: 20rem;
-    line-height: 2rem; }
+    margin-right: 32rem;
+    line-height: 2rem;
+    margin-left: -9rem; }
     .footerList__1--1, .footerList__2--1, .footerList__3--1, .footerList__4--1 {
       padding-bottom: 0.1rem;
       font-weight: 600; }
@@ -389,41 +395,10 @@ nav {
   @media only screen and (max-width: 26.8em) {
     .footerList {
       margin-left: -0.5rem; } }
-  .footerList__link:link, .footerList__link:visited {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 0.2rem; }
-    .footerList__link:link i, .footerList__link:visited i {
-      position: absolute;
-      top: -3.3rem;
-      left: 50%;
-      font-size: 4rem;
-      transform: translateX(-50%); }
-  .footerList__link:hover {
-    background-color: rgba(255, 255, 255, 0.25); }
   @media only screen and (max-width: 50em) {
     .footerList {
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-      grid-auto-rows: 15vh;
       justify-content: center;
-      text-align: center; }
-      .footerList__link:link, .footerList__link:visited {
-        font-size: 1.5rem;
-        font-weight: 500;
-        padding: 1.5rem;
-        margin-top: 4rem; }
-        .footerList__link:link i, .footerList__link:visited i {
-          position: absolute;
-          top: -3.3rem;
-          left: 50%;
-          font-size: 4rem;
-          transform: translateX(-50%); } }
+      text-align: center; } }
 
 .gallery {
   display: grid;

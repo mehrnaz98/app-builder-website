@@ -4,11 +4,19 @@
   padding: 6rem;
   padding-top: 9rem;
   padding-bottom: 15rem;
-  margin-top: 11rem;
+
+  font-family: $font-display;
 
   @media only screen and (max-width: $bp-small) {
     padding: 3rem;
   }
+}
+
+.footerParagraph {
+  color: $color-white;
+  margin-left: 6rem;
+  margin-top: 9rem;
+  font-size: 1.8rem;
 }
 
 .footerList {
@@ -16,7 +24,6 @@
   list-style: none;
   align-items: center;
   color: $color-white;
-  font-family: $font-display;
   font-size: 1.8rem;
   margin: 0 auto;
   text-align: center;
@@ -31,8 +38,9 @@
     text-align: left;
     display: block;
     list-style: none;
-    margin-right: 20rem;
+    margin-right: 32rem;
     line-height: 2rem;
+    margin-left: -9rem;
 
     &--1 {
       padding-bottom: 0.1rem;
@@ -48,51 +56,8 @@
     margin-left: -0.5rem;
   }
 
-  &__link:link,
-  &__link:visited {
-    position: relative;
-    font-size: 1.5rem;
-    // font-family: $font-display;
-    font-weight: 700;
-    color: $color-white;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 0.2rem;
-
-    i {
-      position: absolute;
-      top: -3.3rem;
-      left: 50%;
-      font-size: 4rem;
-      transform: translateX(-50%);
-    }
-  }
-
-  &__link:hover {
-    background-color: rgba($color-white, 0.25);
-  }
-
   @media only screen and (max-width: $bp-medium) {
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-auto-rows: 15vh;
     justify-content: center;
     text-align: center;
-
-    &__link:link,
-    &__link:visited {
-      font-size: 1.5rem;
-      font-weight: 500;
-      padding: 1.5rem;
-      margin-top: 4rem;
-      i {
-        position: absolute;
-        top: -3.3rem;
-        left: 50%;
-        font-size: 4rem;
-        transform: translateX(-50%);
-      }
-    }
   }
 }
