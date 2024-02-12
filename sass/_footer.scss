@@ -15,7 +15,6 @@
   display: flex;
   list-style: none;
   align-items: center;
-  text-align: left;
   color: $color-white;
   font-family: $font-display;
   font-size: 1.8rem;
@@ -29,11 +28,15 @@
   &__2,
   &__3,
   &__4 {
+    text-align: left;
     display: block;
     list-style: none;
     margin-right: 20rem;
+    line-height: 2rem;
 
     &--1 {
+      padding-bottom: 0.1rem;
+      font-weight: 600;
     }
   }
 
