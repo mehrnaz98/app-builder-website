@@ -8,8 +8,8 @@
   padding-bottom: 10rem; }
 
 .u-vertical-padding-sm {
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem; }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 /*text alignment*/
 .u-center-text {
@@ -353,25 +353,39 @@ nav {
 
 .footer {
   background-color: #1f306e;
-  grid-column: full-start / full-end;
-  padding: 8rem; }
-  .footer__copyright {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-    padding-top: 2.5rem; }
+  grid-area: footer;
+  padding: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 15rem;
+  margin-top: 11rem; }
   @media only screen and (max-width: 37.5em) {
     .footer {
       padding: 3rem; } }
 
-.nav {
+.footerList {
+  display: flex;
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  align-items: center; }
-  .nav__link:link, .nav__link:visited {
+  align-items: center;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  padding-top: 2.5rem;
+  font-weight: 500; }
+  .footerList__1, .footerList__2, .footerList__3, .footerList__4 {
+    display: block;
+    list-style: none;
+    margin-right: 20rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footerList {
+      margin-left: 0.5rem; } }
+  @media only screen and (max-width: 26.8em) {
+    .footerList {
+      margin-left: -0.5rem; } }
+  .footerList__link:link, .footerList__link:visited {
     position: relative;
     font-size: 1.5rem;
     font-weight: 700;
@@ -381,26 +395,26 @@ nav {
     text-align: center;
     padding: 2.5rem;
     border-radius: 0.2rem; }
-    .nav__link:link i, .nav__link:visited i {
+    .footerList__link:link i, .footerList__link:visited i {
       position: absolute;
       top: -3.3rem;
       left: 50%;
       font-size: 4rem;
       transform: translateX(-50%); }
-  .nav__link:hover {
+  .footerList__link:hover {
     background-color: rgba(255, 255, 255, 0.25); }
   @media only screen and (max-width: 50em) {
-    .nav {
+    .footerList {
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
       grid-auto-rows: 15vh;
       justify-content: center;
       text-align: center; }
-      .nav__link:link, .nav__link:visited {
+      .footerList__link:link, .footerList__link:visited {
         font-size: 1.5rem;
         font-weight: 500;
         padding: 1.5rem;
         margin-top: 4rem; }
-        .nav__link:link i, .nav__link:visited i {
+        .footerList__link:link i, .footerList__link:visited i {
           position: absolute;
           top: -3.3rem;
           left: 50%;
