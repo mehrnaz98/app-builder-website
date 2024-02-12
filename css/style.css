@@ -405,9 +405,13 @@ nav {
   .footerEnd__Icon {
     display: flex;
     list-style: none;
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 0; }
     .footerEnd__Icon--1, .footerEnd__Icon--2, .footerEnd__Icon--3, .footerEnd__Icon--4 {
-      background-color: #f5487f; }
+      background-color: #f5487f;
+      border-radius: 50%;
+      margin-right: 3rem; }
 
 .gallery {
   display: grid;
