@@ -2,6 +2,7 @@
 
 .header-content {
   display: flex;
+  flex-wrap: wrap;
   color: $color-primary;
 
   .header__left {
@@ -20,8 +21,25 @@
       margin-top: 9rem;
       margin-right: -17rem;
 
+      @media screen and (max-width: $bp-large) {
+        font-size: 4rem;
+        padding-right: 14rem;
+      }
+
+      @media screen and (max-width: $bp-medium) {
+        padding-right: 9rem;
+      }
+
       @media screen and (max-width: $bp-small) {
-        font-size: 9rem;
+        margin: 0 auto;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      @media screen and (max-width: $bp-smaller) {
+        margin: 0 auto;
       }
     }
 
@@ -32,6 +50,25 @@
       margin-left: 12rem;
       margin-right: 5rem;
       line-height: 2.9rem;
+
+      @media screen and (max-width: $bp-large) {
+        margin-right: 2rem;
+      }
+
+      @media screen and (max-width: $bp-medium) {
+        margin-right: 6rem;
+        margin-top: 2rem;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        margin-left: 35px;
+        margin-right: 35px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: $bp-smaller) {
+        margin-right: 0rem;
+      }
     }
 
     .downloadbutton {
@@ -54,6 +91,8 @@
           margin-left: 1rem;
         }
       }
+      @media screen and (max-width: $bp-small) {
+      }
     }
   }
 
@@ -61,6 +100,10 @@
     flex: 1;
     margin-right: -7rem;
     margin-top: -3rem;
+
+    @media screen and (max-width: $bp-small) {
+      margin-top: 2rem;
+    }
 
     ul {
       display: flex;
@@ -71,21 +114,23 @@
     &--pic1 {
       width: 30rem;
       margin-right: -13rem;
+
+      @media screen and (max-width: $bp-small) {
+        width: 30rem;
+      }
+
+      @media screen and (max-width: $bp-smaller) {
+        margin-right: -14rem;
+        margin-left: -5rem;
+      }
     }
 
     &--pic2 {
       width: 40rem;
+
+      @media screen and (max-width: $bp-small) {
+        width: 30rem;
+      }
     }
   }
 }
-/*
-.header {
-   grid-column: full-start / col-end 3;
-  display: grid;
-  grid-template-columns: minmax(min-content, max-content);
-  align-content: center;
-  justify-content: center;
-
-  @media only screen and (max-width: $bp-medium) {
-    grid-column: 1 / -1;
-  }*/
