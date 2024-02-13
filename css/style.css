@@ -47,6 +47,7 @@ body {
 
 .container {
   display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [full-end];
   grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer"; }
 
 header {
@@ -396,6 +397,7 @@ nav {
 
 .gallery {
   display: grid;
+  grid-column: full-start / full-end;
   grid-area: gallery;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(11, 5vw);
@@ -405,7 +407,17 @@ nav {
   .gallery h2 {
     grid-row: 1 / span 2;
     grid-column: 1 / -1;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: -18rem; }
+    @media only screen and (max-width: 50em) {
+      .gallery h2 {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .gallery h2 {
+        font-size: 2.6rem; } }
+    @media only screen and (max-width: 26.8em) {
+      .gallery h2 {
+        font-size: 2.1rem; } }
   .gallery__item {
     padding: 0;
     margin: 0; }
@@ -446,6 +458,24 @@ nav {
     width: 100%;
     object-fit: cover;
     display: block; }
+    .gallery__img--1 {
+      margin-left: -7rem; }
+
+@media only screen and (max-width: 62.5em) {
+  .gallery__img--1 {
+    margin-left: 0rem; } }
+
+@media only screen and (max-width: 50em) {
+  .gallery__img--1 {
+    margin-left: 3rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .gallery__img--1 {
+    margin-left: 6rem; } }
+
+@media only screen and (max-width: 26.8em) {
+  .gallery__img--1 {
+    margin-left: 6rem; } }
 
 .journal {
   background-color: #1f306e;

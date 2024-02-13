@@ -101,6 +101,8 @@ body {
 
 .container {
   display: grid;
+
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [full-end];
   grid-template-areas:
     "header"
     "servicesSection"
