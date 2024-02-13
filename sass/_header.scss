@@ -3,84 +3,84 @@
 .header-content {
   display: flex;
   color: $color-primary;
-}
 
-.header__left {
-  flex: 1;
-  text-align: left;
-  list-style: none;
-  margin-top: 3rem;
+  .header__left {
+    flex: 1;
+    text-align: left;
+    list-style: none;
+    margin-top: 3rem;
 
-  &--main {
-    font-family: $font-primary;
-    font-size: 4.6rem;
-    line-height: 60px;
-    font-weight: 501;
-    text-transform: capitalize;
-    margin-left: 12rem;
-    margin-top: 9rem;
-    margin-right: -17rem;
-
-    @media screen and (max-width: $bp-small) {
-      font-size: 9rem;
-    }
-  }
-
-  &--sub {
-    font-family: $font-display;
-    font-size: 1.8rem;
-    padding-top: 2.5rem;
-    margin-left: 12rem;
-    margin-right: 5rem;
-    line-height: 2.9rem;
-  }
-
-  .downloadbutton {
-    font-family: $font-primary;
-    margin-top: 8rem;
-    a {
-      text-decoration: none;
-      color: $color-white;
-      background-color: $color-primary;
-      font-size: 1.8rem;
-      padding: 21px 21px;
-      border-radius: 12px;
-      margin-left: 26rem;
-      font-weight: 600;
+    &--main {
+      font-family: $font-primary;
+      font-size: 4.6rem;
+      line-height: 60px;
+      font-weight: 501;
       text-transform: capitalize;
       margin-left: 12rem;
+      margin-top: 9rem;
+      margin-right: -17rem;
 
-      i {
-        font-size: 1.5rem;
-        margin-left: 1rem;
+      @media screen and (max-width: $bp-small) {
+        font-size: 9rem;
+      }
+    }
+
+    &--sub {
+      font-family: $font-display;
+      font-size: 1.8rem;
+      padding-top: 2.5rem;
+      margin-left: 12rem;
+      margin-right: 5rem;
+      line-height: 2.9rem;
+    }
+
+    .downloadbutton {
+      font-family: $font-primary;
+      margin-top: 8rem;
+      a {
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-primary;
+        font-size: 1.8rem;
+        padding: 21px 21px;
+        border-radius: 12px;
+        margin-left: 26rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-left: 12rem;
+
+        i {
+          font-size: 1.5rem;
+          margin-left: 1rem;
+        }
       }
     }
   }
+
+  .header__right {
+    flex: 1;
+    margin-right: -7rem;
+    margin-top: -3rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+
+    &--pic1 {
+      width: 30rem;
+      margin-right: -13rem;
+    }
+
+    &--pic2 {
+      width: 40rem;
+    }
+  }
 }
-
-.header__right {
-  flex: 1;
-  margin-right: -7rem;
-  margin-top: -3rem;
-
-  ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-
-  &--pic1 {
-    width: 30rem;
-    margin-right: -13rem;
-  }
-
-  &--pic2 {
-    width: 40rem;
-  }
-}
-
+/*
 .header {
-  /* grid-column: full-start / col-end 3;
+   grid-column: full-start / col-end 3;
   display: grid;
   grid-template-columns: minmax(min-content, max-content);
   align-content: center;
@@ -89,4 +89,3 @@
   @media only screen and (max-width: $bp-medium) {
     grid-column: 1 / -1;
   }*/
-}

@@ -102,19 +102,115 @@ body {
 .container {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "servicesSection servicesSection servicesSection"
-    "journal journal journal"
-    "gallery gallery gallery"
-    "footer footer footer";
+    "header"
+    "servicesSection"
+    "journal"
+    "gallery"
+    "footer";
 }
 
-.header {
+header {
   grid-area: header;
 }
 
 .servicesSection {
   grid-area: servicesSection;
+}
+
+footer {
+  grid-area: footer;
+}
+
+@media only screen and (max-width: $bp-large) {
+  .container {
+    grid-template-areas:
+      "header"
+      "servicesSection"
+      "journal"
+      "gallery"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .servicesSection {
+    grid-area: servicesSection;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  .container {
+    grid-template-areas:
+      "header"
+      "servicesSection"
+      "journal"
+      "gallery"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .servicesSection {
+    grid-area: servicesSection;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  .container {
+    grid-template-areas:
+      "header"
+      "servicesSection"
+      "journal"
+      "gallery"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .servicesSection {
+    grid-area: servicesSection;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media only screen and (max-width: $bp-smaller) {
+  .container {
+    grid-template-areas:
+      "header"
+      "servicesSection"
+      "journal"
+      "gallery"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  .servicesSection {
+    grid-area: servicesSection;
+  }
+
+  footer {
+    grid-area: footer;
+  }
 }
 /*display: grid;
   grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
@@ -125,11 +221,9 @@ body {
 
   @media only screen and (max-width: $bp-large) {
     grid-template-columns:
-      [full-start] minmax(6rem, 1fr) [center-start] repeat(
-        7,
-        [col-start] minmax(min-content, 14rem) [col-end]
-      )
-      [center-end] minmax(6rem, 1fr) [full-end];
+    [full-start] minmax(6rem, 1fr) 
+    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end] minmax(6rem, 1fr) [full-end];
   }
 
   @media only screen and (max-width: $bp-medium) {
