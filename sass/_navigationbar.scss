@@ -74,6 +74,9 @@ nav {
           margin-left: 0rem;
         }
       }
+      @media screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
 
     :not(:last-child) {

@@ -46,3 +46,9 @@
     }
   }
 }
+
+.servicesgap {
+  @media screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+}

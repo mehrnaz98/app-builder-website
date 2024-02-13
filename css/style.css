@@ -216,6 +216,9 @@ nav {
           nav .navlink__logbutton a {
             font-size: 1.8rem;
             margin-left: 0rem; } }
+      @media screen and (max-width: 37.5em) {
+        nav .navlink__logbutton {
+          display: none; } }
     nav .navlink :not(:last-child) {
       margin-right: 6rem; }
       @media screen and (max-width: 62.5em) {
@@ -401,6 +404,10 @@ nav {
     margin-top: 0.8rem;
     margin-bottom: 2.5rem;
     padding: 0 1.5rem; }
+
+@media screen and (max-width: 50em) {
+  .servicesgap {
+    margin-bottom: 3rem; } }
 
 .footer {
   background-color: #1f306e;
