@@ -70,7 +70,8 @@ footer {
 
 @media only screen and (max-width: 50em) {
   .container {
-    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer"; }
+    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer";
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
   header {
     grid-area: header; }
   .servicesSection {
@@ -80,7 +81,8 @@ footer {
 
 @media only screen and (max-width: 37.5em) {
   .container {
-    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer"; }
+    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer";
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
   header {
     grid-area: header; }
   .servicesSection {
@@ -90,7 +92,8 @@ footer {
 
 @media only screen and (max-width: 26.8em) {
   .container {
-    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer"; }
+    grid-template-areas: "header" "servicesSection" "journal" "gallery" "footer";
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
   header {
     grid-area: header; }
   .servicesSection {
@@ -98,26 +101,6 @@ footer {
   footer {
     grid-area: footer; } }
 
-/*display: grid;
-  grid-template-rows: 15rem 80vh min-content repeat(4, min-content);
-  grid-template-columns:
-    [full-start] minmax(6rem, 1fr)
-    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
-    [center-end] minmax(6rem, 1fr) [full-end];
-
-  @media only screen and (max-width: $bp-large) {
-    grid-template-columns:
-    [full-start] minmax(6rem, 1fr) 
-    [center-start] repeat(7, [col-start] minmax(min-content, 14rem) [col-end])
-    [center-end] minmax(6rem, 1fr) [full-end];
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content repeat(
-        4,
-        min-content
-      );
-  }*/
 .heading__primary {
   font-family: "Raleway", sans-serif;
   font-size: 4.5rem;
@@ -350,46 +333,6 @@ nav {
     margin-bottom: 2.5rem;
     padding: 0 1.5rem; }
 
-.discover {
-  grid-column: center-start / center-end; }
-  .discover__card {
-    color: #1f306e;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-    padding: 5rem 0; }
-    .discover__card:nth-of-type(odd) {
-      direction: rtl; }
-    .discover__card__img {
-      text-align: center; }
-      .discover__card__img img {
-        height: 150px;
-        width: 150px;
-        border-radius: 100%;
-        object-fit: cover; }
-      .discover__card__img div {
-        font-size: 2rem;
-        padding-top: 2rem; }
-    .discover__card__content {
-      text-align: left;
-      padding: 0 5rem; }
-      .discover__card__content p {
-        font-size: 1.6rem;
-        font-weight: 300; }
-  @media screen and (max-width: 50em) {
-    .discover__card {
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); }
-      .discover__card__img div {
-        padding: 3rem 0; }
-      .discover__card__content {
-        padding: 0 0.5rem; } }
-  @media screen and (max-width: 37.5em) {
-    .discover {
-      grid-column: full-start / full-end; }
-      .discover__card__content {
-        text-align: center; } }
-
 .footer {
   background-color: #1f306e;
   padding: 6rem;
@@ -570,79 +513,3 @@ nav {
       .journal__content--list {
         padding-right: 8rem;
         margin-left: -3rem; } }
-
-/*.introPicture {
-   grid-column: col-start 4 / full-end;
-  display: grid;
-  grid-template-columns: minmax(min-content, max-content);
-  align-content: center;
-  &__list {
-    display: flex;
-    list-style: none;
-    &--pic1 {
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-    &--pic2 {
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    //grid-column: 1 / -1;
-    //justify-content: center;
-    display: none;
-  }
-}*/
-.saledep-container {
-  grid-column: full-start / full-end;
-  color: #1f306e;
-  padding: 10rem 5rem;
-  text-align: center; }
-  .saledep-container .saledep {
-    margin-top: 10rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-    grid-gap: 15rem 5rem; }
-    .saledep-container .saledep .card-car {
-      display: grid;
-      justify-items: center;
-      font-size: 1.2rem;
-      padding: 0rem 3rem;
-      box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.4);
-      border-radius: 0.7rem;
-      grid-template-rows: 20vh auto 10vh;
-      align-items: center; }
-      .saledep-container .saledep .card-car__img {
-        transform: translateY(-5rem);
-        border-radius: 0.7rem;
-        height: 100%;
-        width: 80%; }
-        @media screen and (max-width: 50em) {
-          .saledep-container .saledep .card-car__img {
-            width: 100%; } }
-        @media screen and (max-width: 37.5em) {
-          .saledep-container .saledep .card-car__img {
-            width: 80%; } }
-      .saledep-container .saledep .card-car__price {
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        grid-auto-rows: 3rem;
-        align-items: center;
-        text-align: left;
-        justify-content: space-between;
-        width: 100%;
-        text-transform: capitalize;
-        letter-spacing: 1px; }
-        .saledep-container .saledep .card-car__price div:nth-of-type(even) {
-          font-weight: 900;
-          font-size: 1.4rem; }
-      .saledep-container .saledep .card-car__btn a {
-        background-color: #ff6f59;
-        width: 50%;
-        padding: 0.8rem 6rem;
-        border-radius: 0.4rem;
-        color: white;
-        text-decoration: none;
-        font-weight: 900; }
