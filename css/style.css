@@ -176,18 +176,54 @@ nav {
     font-size: 3.2rem;
     margin-left: 12rem;
     font-weight: 550; }
+    @media screen and (max-width: 62.5em) {
+      nav .navlink {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 50em) {
+      nav .navlink {
+        font-size: 2.1rem; } }
+    @media screen and (max-width: 37.5em) {
+      nav .navlink {
+        margin-left: 3rem; } }
     nav .navlink li a {
       color: var(--color-primary);
       text-decoration: none; }
-    nav .navlink .logbutton {
+    nav .navlink .navlink li {
+      flex-basis: 25%; }
+    @media (max-width: 600px) {
+      nav .navlink .navlink li {
+        flex-basis: 50%; } }
+    @media (max-width: 400px) {
+      nav .navlink .navlink li {
+        flex-basis: 100%; } }
+    nav .navlink__logbutton {
       color: #ffffff;
       background-color: #c7417b;
       font-size: 2.5rem;
       padding: 8px 43px;
       border-radius: 82px;
       margin-left: 25rem; }
+      @media screen and (max-width: 75em) {
+        nav .navlink__logbutton {
+          margin-left: 15rem; } }
+      @media screen and (max-width: 62.5em) {
+        nav .navlink__logbutton {
+          margin-left: 2rem; } }
+      @media screen and (max-width: 50em) {
+        nav .navlink__logbutton {
+          font-size: 2rem;
+          padding: 4px 19px; }
+          nav .navlink__logbutton a {
+            font-size: 1.8rem;
+            margin-left: 0rem; } }
     nav .navlink :not(:last-child) {
       margin-right: 6rem; }
+      @media screen and (max-width: 62.5em) {
+        nav .navlink :not(:last-child) {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 37.5em) {
+        nav .navlink :not(:last-child) {
+          font-size: 1.5rem; } }
   nav :hover {
     cursor: pointer; }
 

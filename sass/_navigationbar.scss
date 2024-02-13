@@ -14,22 +14,83 @@ nav {
     margin-left: 12rem;
     font-weight: 550;
 
+    @media screen and (max-width: $bp-large) {
+      font-size: 2.5rem;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      font-size: 2.1rem;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      margin-left: 3rem;
+    }
+
+    @media screen and (max-width: $bp-smaller) {
+    }
+
     li a {
       color: var(--color-primary);
       text-decoration: none;
     }
 
-    .logbutton {
+    .navlink li {
+      flex-basis: 25%;
+    }
+
+    @media (max-width: 600px) {
+      .navlink li {
+        flex-basis: 50%;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .navlink li {
+        flex-basis: 100%;
+      }
+    }
+
+    &__logbutton {
       color: $color-white;
       background-color: $color-red;
       font-size: 2.5rem;
       padding: 8px 43px;
       border-radius: 82px;
       margin-left: 25rem;
+
+      @media screen and (max-width: $bp-largest) {
+        margin-left: 15rem;
+      }
+
+      @media screen and (max-width: $bp-large) {
+        margin-left: 2rem;
+      }
+
+      @media screen and (max-width: $bp-medium) {
+        font-size: 2rem;
+        padding: 4px 19px;
+        a {
+          font-size: 1.8rem;
+          margin-left: 0rem;
+        }
+      }
     }
 
     :not(:last-child) {
       margin-right: 6rem;
+
+      @media screen and (max-width: $bp-large) {
+        font-size: 1.8rem;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: $bp-smaller) {
+        a {
+        }
+      }
     }
   }
   :hover {
