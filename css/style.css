@@ -117,7 +117,7 @@ footer {
   transition: all 100ms ease-in-out; }
   @media screen and (max-width: 37.5em) {
     .heading__primary {
-      font-size: 3rem; } }
+      font-size: 2.8rem; } }
   .heading__primary:hover {
     transform: rotate(-1deg) skew(15deg);
     text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.5); }
@@ -484,6 +484,10 @@ footer {
       margin-right: 10px;
       margin-left: 6rem;
       font-size: 1.6rem; }
+      @media only screen and (max-width: 26.8em) {
+        footer .footerEnd__Paragraph {
+          margin-left: 0rem;
+          margin-right: 0px; } }
     footer .footerEnd__Icon {
       list-style: none;
       color: #ffffff;

@@ -91,6 +91,11 @@ footer {
       margin-right: 10px;
       margin-left: 6rem;
       font-size: 1.6rem;
+
+      @media only screen and (max-width: $bp-smaller) {
+        margin-left: 0rem;
+        margin-right: 0px;
+      }
     }
 
     &__Icon {
