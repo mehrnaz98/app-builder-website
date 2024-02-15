@@ -353,6 +353,13 @@ nav {
       @media screen and (max-width: 50em) {
         .header-content .header__left .downloadbutton {
           margin-bottom: 0rem; } }
+      @media screen and (max-width: 37.5em) {
+        .header-content .header__left .downloadbutton {
+          margin-bottom: 0rem;
+          display: flex;
+          justify-content: center; }
+          .header-content .header__left .downloadbutton a {
+            margin-left: 0; } }
   .header-content .header__right {
     flex: 1;
     margin-top: -3rem;

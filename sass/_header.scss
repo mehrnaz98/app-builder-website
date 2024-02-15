@@ -75,6 +75,7 @@
     .downloadbutton {
       font-family: $font-primary;
       margin-top: 8rem;
+
       a {
         text-decoration: none;
         color: $color-white;
@@ -99,6 +100,16 @@
 
       @media screen and (max-width: $bp-medium) {
         margin-bottom: 0rem;
+      }
+
+      @media screen and (max-width: $bp-small) {
+        margin-bottom: 0rem;
+        display: flex;
+        justify-content: center;
+
+        a {
+          margin-left: 0;
+        }
       }
     }
   }
