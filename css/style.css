@@ -369,7 +369,9 @@ nav {
     padding-left: 8rem; }
     @media screen and (max-width: 62.5em) {
       .header-content .header__right {
-        padding-left: 0rem; } }
+        padding-left: 0rem; }
+        .header-content .header__right u {
+          padding-left: 0; } }
     @media screen and (max-width: 50em) {
       .header-content .header__right {
         margin-bottom: 0rem;

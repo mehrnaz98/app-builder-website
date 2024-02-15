@@ -121,6 +121,9 @@
 
     @media screen and (max-width: $bp-large) {
       padding-left: 0rem;
+      u {
+        padding-left: 0;
+      }
     }
 
     @media screen and (max-width: $bp-medium) {
