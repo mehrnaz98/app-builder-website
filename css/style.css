@@ -611,6 +611,10 @@ footer {
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 2.8rem; }
+      @media screen and (max-width: 26.8em) {
+        .journal__content--paragraph {
+          font-size: 1.4rem;
+          padding-right: 11rem; } }
     .journal__content--1 {
       grid-row: 1 / 2;
       grid-column: 1 / 2;
