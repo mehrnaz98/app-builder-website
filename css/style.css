@@ -230,6 +230,9 @@ nav {
       @media screen and (max-width: 37.5em) {
         nav .navlink :not(:last-child) {
           font-size: 1.5rem; } }
+      @media screen and (max-width: 26.8em) {
+        nav .navlink :not(:last-child) {
+          margin-right: 3.6rem; } }
   nav :hover {
     cursor: pointer; }
 

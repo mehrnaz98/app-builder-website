@@ -26,9 +26,6 @@ nav {
       margin-left: 3rem;
     }
 
-    @media screen and (max-width: $bp-smaller) {
-    }
-
     li a {
       color: var(--color-primary);
       text-decoration: none;
@@ -91,8 +88,7 @@ nav {
       }
 
       @media screen and (max-width: $bp-smaller) {
-        a {
-        }
+        margin-right: 3.6rem;
       }
     }
   }
