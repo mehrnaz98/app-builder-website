@@ -318,8 +318,8 @@ nav {
           margin-right: 2rem; } }
       @media screen and (max-width: 50em) {
         .header-content .header__left--sub {
-          margin-right: 6rem;
-          margin-top: 2rem; } }
+          margin-right: 12rem;
+          margin-top: 0rem; } }
       @media screen and (max-width: 37.5em) {
         .header-content .header__left--sub {
           margin-left: 35px;
@@ -342,15 +342,20 @@ nav {
         .header-content .header__left .downloadbutton a i {
           font-size: 1.5rem;
           margin-left: 1rem; }
+      @media screen and (max-width: 62.5em) {
+        .header-content .header__left .downloadbutton {
+          margin-bottom: 6rem; } }
+      @media screen and (max-width: 50em) {
+        .header-content .header__left .downloadbutton {
+          margin-bottom: 0rem; } }
   .header-content .header__right {
     flex: 1;
     margin-top: -3rem;
     padding-left: 8rem; }
-    @media screen and (max-width: 50em) {
+    @media screen and (max-width: 62.5em) {
       .header-content .header__right {
-        margin-top: 2rem;
         padding-left: 0rem; } }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 50em) {
       .header-content .header__right {
         margin-top: 2rem; } }
     .header-content .header__right ul {
