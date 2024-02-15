@@ -471,7 +471,8 @@ footer {
         margin-left: 0rem;
         justify-content: center;
         text-align: center;
-        flex-direction: column; } }
+        flex-direction: column;
+        font-size: 1.8rem; } }
   footer .footerEnd {
     display: flex;
     flex-wrap: wrap;
