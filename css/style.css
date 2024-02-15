@@ -492,14 +492,25 @@ footer {
       @media only screen and (max-width: 26.8em) {
         footer .footerEnd__Paragraph {
           margin-left: 0rem;
-          margin-right: 0px; } }
+          margin-right: 0px;
+          text-align: right;
+          order: 2;
+          flex-basis: 100%; } }
     footer .footerEnd__Icon {
       list-style: none;
       color: #ffffff;
       font-size: 1.3rem;
       line-height: 0;
       display: flex;
-      justify-content: space-between; }
+      justify-content: flex-end;
+      flex-grow: 1; }
+      @media only screen and (max-width: 26.8em) {
+        footer .footerEnd__Icon {
+          order: 1;
+          flex-basis: 100%;
+          justify-content: flex-end;
+          margin-top: 1rem;
+          padding-right: 5rem; } }
       footer .footerEnd__Icon--1, footer .footerEnd__Icon--2, footer .footerEnd__Icon--3, footer .footerEnd__Icon--4 {
         background-color: #c7417b;
         width: 35px;
