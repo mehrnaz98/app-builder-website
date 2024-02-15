@@ -23,6 +23,10 @@ nav {
     }
 
     @media screen and (max-width: $bp-small) {
+      margin-left: 10rem;
+    }
+
+    @media screen and (max-width: $bp-smaller) {
       margin-left: 3rem;
     }
 

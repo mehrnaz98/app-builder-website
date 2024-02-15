@@ -187,6 +187,9 @@ nav {
         font-size: 2.1rem; } }
     @media screen and (max-width: 37.5em) {
       nav .navlink {
+        margin-left: 10rem; } }
+    @media screen and (max-width: 26.8em) {
+      nav .navlink {
         margin-left: 3rem; } }
     nav .navlink li a {
       color: var(--color-primary);
@@ -369,7 +372,12 @@ nav {
         padding-left: 0rem; } }
     @media screen and (max-width: 50em) {
       .header-content .header__right {
-        margin-top: 2rem; } }
+        margin-bottom: 0rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem; }
+        .header-content .header__right u {
+          padding-left: 0; } }
     .header-content .header__right ul {
       display: flex;
       align-items: center;

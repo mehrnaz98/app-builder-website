@@ -124,7 +124,14 @@
     }
 
     @media screen and (max-width: $bp-medium) {
+      margin-bottom: 0rem;
+      display: flex;
+      justify-content: center;
       margin-top: 2rem;
+
+      u {
+        padding-left: 0;
+      }
     }
 
     @media screen and (max-width: $bp-small) {
