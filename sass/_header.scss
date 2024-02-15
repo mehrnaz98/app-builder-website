@@ -67,7 +67,6 @@
       }
 
       @media screen and (max-width: $bp-smaller) {
-        margin-right: 0rem;
       }
     }
 
@@ -98,8 +97,13 @@
 
   .header__right {
     flex: 1;
-    margin-right: -7rem;
     margin-top: -3rem;
+    padding-left: 8rem;
+
+    @media screen and (max-width: $bp-medium) {
+      margin-top: 2rem;
+      padding-left: 0rem;
+    }
 
     @media screen and (max-width: $bp-small) {
       margin-top: 2rem;
@@ -122,6 +126,7 @@
       @media screen and (max-width: $bp-smaller) {
         margin-right: -14rem;
         margin-left: -5rem;
+        width: 26rem;
       }
     }
 
