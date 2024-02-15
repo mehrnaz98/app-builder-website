@@ -2,16 +2,11 @@ footer {
   background-color: $color-blue;
   padding: 6rem;
   padding-top: 10rem;
-  padding-bottom: 15rem;
   font-family: $font-primary;
 
   .footer {
     display: flex;
     justify-content: space-between;
-
-    @media only screen and (max-width: $bp-small) {
-      //  padding: 3rem;
-    }
   }
 
   .footerList {
