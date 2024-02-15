@@ -515,10 +515,13 @@ footer {
         font-size: 4rem; } }
     @media only screen and (max-width: 37.5em) {
       .gallery h2 {
-        font-size: 2.6rem; } }
+        font-size: 2.9rem; } }
     @media only screen and (max-width: 26.8em) {
       .gallery h2 {
-        font-size: 2.1rem; } }
+        font-size: 2.8rem;
+        margin-bottom: -11rem;
+        margin-left: -11rem;
+        margin-right: -12rem; } }
   .gallery__item {
     padding: 0;
     margin: 0; }
