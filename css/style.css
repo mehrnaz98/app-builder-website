@@ -115,6 +115,9 @@ footer {
   -moz-background-clip: text;
   color: transparent;
   transition: all 100ms ease-in-out; }
+  @media screen and (max-width: 37.5em) {
+    .heading__primary {
+      font-size: 3rem; } }
   .heading__primary:hover {
     transform: rotate(-1deg) skew(15deg);
     text-shadow: 5px 6px 4px rgba(0, 0, 0, 0.5); }
